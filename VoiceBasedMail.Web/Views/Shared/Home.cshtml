@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <meta charset="utf-8">
+    <title>Home-Voice Mail</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!--End Meta-->
+
+    <title>@ViewBag.Title</title>
+    <link rel="icon" type="image/png" href="@Url.Content("~/Content/registration/")images/voicemail_icon_giK_icon.ico" />
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <link href="@Url.Content("~/Content/Home page/")lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/Home page/")lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/Home page/")lib/animate-css/animate.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/Home page/")css/style.css" rel="stylesheet">
+</head>
+<body>
+        <div id="preloader"></div>
+
+        <!--==========================
+        Hero Section
+        ============================-->
+        <section id="hero">
+            <div class="hero-container">
+                <div class="wow fadeIn">
+                    <div class="hero-logo">
+                        <a href="https://www.vmail.com"><img class="" src="@Url.Content("~/Content/Home page/")img/V-Mail-logo.png" alt="V-Mail" title="Voice Mail"></a>
+                    </div>
+
+                    <h1>Welcome to Voice Mail</h1>
+                    <h2>We helps to send <span class="rotating">voice mail, write mail</span></h2>
+                    <div class="actions">
+                        <a href="#about" class="btn-get-started">Voice Mail</a>
+                        <a href="#services" class="btn-services">Write mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+        Header Section
+        ============================-->
+        <header id="header">
+            <div class="container">
+
+                <div id="logo" class="pull-left">
+                    <a href="#hero"><img src="@Url.Content("~/Content/Home page/")img/V-Mail-logo.png" alt="" title="Voice Mail" /></a>
+                    <!-- Uncomment below if you prefer to use a text image -->
+                    <!--<h1><a href="#hero">Header 1</a></h1>-->
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li class="menu-has-children">
+                            <a href="">Team </a>
+                            <ul>
+                                <li class="menu-has-children">
+                                    <a href="#">Teachers</a>
+                                    <ul>
+                                        <li><a href="#">SK Mamunur Rashid</a></li>
+                                        <li><a href="#">Kaniz Fatema</a></li>
+                                        <li><a href="#">Md. Fahim Shikder</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">S.M Najrul Howlader</a></li>
+                                <li><a href="#">Md. Nazmul Huda</a></li>
+                                <li><a href="#">Afroza Shahid Anannya</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#Log Out">Log Out</a></li>
+                    </ul>
+                </nav>
+                <!-- #nav-menu-container -->
+            </div>
+        </header>
+        <!-- #header -->
+
+    
+
+    <!-- Required JavaScript Libraries -->
+    <script src="@Url.Content("~/Content/Home page/")lib/jquery/jquery.min.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")lib/superfish/hoverIntent.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")lib/superfish/superfish.min.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")lib/morphext/morphext.min.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")lib/wow/wow.min.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")/stickyjs/sticky.js"></script>
+    <script src="@Url.Content("~/Content/Home page/")lib/easing/easing.js"></script>
+
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="js/custom.js"></script>
+
+    <script src="contactform/contactform.js"></script>
+
+        <div>
+            @RenderBody()
+        </div>
+
+    </body>
+</html>

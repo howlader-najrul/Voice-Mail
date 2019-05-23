@@ -1,31 +1,188 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Voice Mail";
+    Layout = "~/Views/Shared/_my template.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<section class="services wrapper">
+    <ul class="clearfix">
+        <li class="animated wow fadeInDown">
+            <img class="icon" src="@Url.Content("~/Content/my template/")img/About us.png" alt="" />
+            <span class="separator"></span>
+            <h2>About Voice Mail</h2>
+            <p>Voice Based Mail has been developed for all classes of people specially for the blinds.</p>
+        </li>
+        <li class="animated wow fadeInDown" data-wow-delay=".2s">
+            <img class="icon" src="@Url.Content("~/Content/my template/")img/contact.png" alt="" />
+            <span class="separator"></span>
+            <h2>Contact Us</h2>
+            <p>27/20,D-block,Mirpur,Dhaka-1216</p>
+            <p>Email: najrulhowlader.cse@gmail.com</p>
+            <p>Call: +880193264714,+8801949717812</p>
+            <p>nazmulhudacse11@gmail.com</p>
+        </li>
+        <li class="animated wow fadeInDown" data-wow-delay=".4s">
+            <img class="icon" src="@Url.Content("~/Content/my template/")img/Features.png" alt="" />
+            <span class="separator"></span>
+            <h2>Up coming Features</h2>
+            <p>Under Constructions.</p>
+        </li>
+    </ul>
+</section><!--  End services  -->
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<section class="video">
+
+    <img src="@Url.Content("~/Content/my template/")img/V-Mail-logo.png" alt="" class="video_logo animated wow fadeInDown" />
+    <h3 class="animated wow fadeInDown">who we are & what we do</h3>
+    <a href="@Url.Content("~/Content/my template/")img/blind.mp4" id="play_btn" class="fancybox animated wow flipInX" data-wow-duration="2s"></a>
+</section><!--  End video  -->
+
+
+<section class="testimonials wrapper">
+    <div class="title animated wow fadeIn">
+        <h2>Testimonials</h2>
+        <h3>We are the team Muskitron</h3>
+        <hr class="separator" />
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <ul class="clearfix">
+        <li class="animated wow fadeInDown">
+            <p>
+                <img src="@Url.Content("~/Content/my template/")img/quotes.png" alt="" class="quotes" />It is an incredible honor for me to lead and serve this great project of ours. Md. Nazmul Huda and Afroza Shahid Anannya have taken it from an idea to one of the greatest and most universally admired companies in the world.
+                <span class="triangle"></span>
+            </p>
+            <div class="client">
+                <img src="@Url.Content("~/Content/my template/")img/client1.jpg" class="avatar" />
+                <div class="client_details">
+                    <h4>S.M Najrul Howlader</h4>
+                    <h5>CEO</h5>
+                </div>
+            </div>
+        </li>
+        <li class="animated wow fadeInDown" data-wow-delay=".2s">
+            <p>
+                <img src="@Url.Content("~/Content/my template/")img/quotes.png" alt="" class="quotes" /> I believe over the next decade computing will become even more ubiquitous and intelligence will become ambient. The coevolution of software and new hardware form factors will intermediate and digitize — many of the things.
+                <span class="triangle"></span>
+            </p>
+            <div class="client">
+                <img src="@Url.Content("~/Content/my template/")img/client2.jpg" class="avatar" />
+                <div class="client_details">
+                    <h4>Md.Nazmul Huda</h4>
+                    <h5>Programmer</h5>
+                </div>
+            </div>
+        </li>
+        <li class="animated wow fadeInDown" data-wow-delay=".4s">
+            <p>
+                <img src="@Url.Content("~/Content/my template/")img/quotes.png" alt="" class="quotes" /> It will better connect us to our friends and families and help us see, express, and share our world in ways never before possible. It will enable businesses to engage customers in more meaningful ways. So,I feel greatfull to this team.
+                <span class="triangle"></span>
+            </p>
+            <div class="client">
+                <img src="@Url.Content("~/Content/my template/")img/client3.jpg" class="avatar" />
+                <div class="client_details">
+                    <h4>Afroza shahid Anannya</h4>
+                    <h5>UI Designer</h5>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section><!--  End testimonials  -->
+<!-- <section class="blog_posts"> -->
+<!-- <div class="wrapper"> -->
+<!-- <div class="title animated wow fadeIn"> -->
+<!-- <h2>Recent Posts</h2> -->
+<!-- <h3>the most recent posts from our blog</h3> -->
+<!-- <hr class="separator"/> -->
+<!-- </div> -->
+<!-- <ul class="clearfix"> -->
+<!-- <li class="animated wow fadeInDown"> -->
+<!-- <div class="media"> -->
+<!-- <div class="date"> -->
+<!-- <span class="day">25</span> -->
+<!-- <span class="month">Jun</span> -->
+<!-- </div> -->
+<!-- <a href="#"> -->
+<!-- <img src="img/blog_post1.jpg" alt=""/> -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- <a href="#"> -->
+<!-- <h1>Sed do eiusmod tempor incididunt.</h1> -->
+<!-- </a> -->
+<!-- </li> -->
+<!-- <li class="animated wow fadeInDown" data-wow-delay=".2s"> -->
+<!-- <div class="media"> -->
+<!-- <div class="date"> -->
+<!-- <span class="day">11</span> -->
+<!-- <span class="month">May</span> -->
+<!-- </div> -->
+<!-- <a href="#"> -->
+<!-- <img src="img/blog_post2.jpg" alt=""/> -->
+<!-- </a> -->
+<!-- </div>					 -->
+<!-- <a href="#"> -->
+<!-- <h1>Velit esse cillum dollore fugiat nulla.</h1> -->
+<!-- </a> -->
+<!-- </li> -->
+<!-- <li class="animated wow fadeInDown" data-wow-delay=".4s"> -->
+<!-- <div class="media"> -->
+<!-- <div class="date"> -->
+<!-- <span class="day">13</span> -->
+<!-- <span class="month">Feb</span> -->
+<!-- </div> -->
+<!-- <a href="#"> -->
+<!-- <img src="img/blog_post3.jpg" alt=""/> -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- <a href="#"> -->
+<!-- <h1>Officia deserunt mollit est anim laborum.</h1> -->
+<!-- </a> -->
+<!-- </li> -->
+<!-- <li class="animated wow fadeInDown" data-wow-delay=".6s"> -->
+<!-- <div class="media"> -->
+<!-- <div class="date"> -->
+<!-- <span class="day">10</span> -->
+<!-- <span class="month">Jan</span> -->
+<!-- </div> -->
+<!-- <a href="#"> -->
+<!-- <img src="img/blog_post4.jpg" alt=""/> -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- <a href="#"><h1>Culpa qui officia deserunt  -->
+<!-- mollit ani -->
+<!-- m.</h1> -->
+<!-- </a> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!-- </div> -->
+<!-- </section><!--  End blog_posts  -->
+
+
+<footer>
+
+    <div class="wrapper">
+        <div class="rights">
+            <img src="@Url.Content("~/Content/my template/")img/V-Mail-logo.png" alt="" class="footer_logo" />
+
+
+
+            <p>All right reserved &copy; @DateTime.Now.Year - Muskitron Corporation</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Profile", "Profile", "Home")</li>
+                <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                
+            </ul>
+        </nav>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</footer><!--  End footer  -->
+<script src='../ga.js'></script>
+
+
+

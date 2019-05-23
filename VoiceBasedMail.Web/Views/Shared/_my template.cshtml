@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @*mytemplae link Start*@
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/my template/")css/reset.css">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/my template/")css/fancybox-thumbs.css">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/my template/")css/fancybox-buttons.css">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/my template/")css/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/my template/")css/animate.css">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/my template/")css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="@Url.Content("~/Content/my template/")img/voicemail_icon_T4f_icon.ico">
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/jquery.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/fancybox.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/fancybox-buttons.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/fancybox-media.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/wow.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/my template/")js/main.js"></script>
+</head>
+<body>
+
+    <section class="billboard light">
+        <header class="wrapper light">
+            <a href="https://www.facebook.com/najrul.islam.796"><img class="logo" src="@Url.Content("~/Content/my template/")img/V-Mail-logo.png" alt="" /></a>
+            <nav>
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Registeration", "Registration", "Home")</li>
+                    <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="caption light animated wow fadeInDown clearfix">
+            <h1>Welcome to the Voice Mail</h1>
+            <p>Developed for advanced world</p>
+            <hr>
+        </div>
+        <div class="shadow"></div>
+    </section><!--  End billboard  -->
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -26,5 +26,18 @@ namespace VoiceBasedMail.Web.Controllers
 
             return View();
         }
+        public ActionResult Registration()
+        {
+            return View();
+        }
+
+        public ActionResult Home()
+        {
+            return View();
+        }
+
+
+        
+
     }
 }

@@ -1,17 +1,42 @@
 ﻿@{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_my template.cshtml";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
+    27/20,D-block,Mirpur,Dhaka-1216<br />
+   <b>Phone:</b><p> +8801932264714</p>
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Support:</strong><a href="mailto:Support@vmail.com">Support@vmail.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@vmail.com">Marketing@vmail.com</a>
 </address>
+
+<footer>
+
+<div class="wrapper">
+    <div class="rights">
+        <img src="@Url.Content("~/Content/my template/")img/V-Mail-logo.png" alt="" class="footer_logo" />
+
+
+
+        <p>All right reserved &copy; @DateTime.Now.Year - Muskitron Corporation</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</footer>
+
+
+<!--  End footer  -->
